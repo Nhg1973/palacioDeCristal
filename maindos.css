@@ -1,0 +1,79 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(86, 223, 147);
+    
+}
+
+
+#contened{
+    
+    width: 90%;
+    max-width: 960px;
+    margin: 15px 15px ;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, auto);
+    
+}
+
+#contened main, header, aside{
+    background: rgb(247, 248, 247);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#contened header{
+    background-color: rgb(74, 77, 236);
+    color: rgb(240, 232, 232);
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#contened aside{
+    display: flex;
+    justify-items: center;
+    width: 200px;
+}
+
+
+
+#contened aside img{
+    width: 200px;
+    height: 300px;
+    min-height: 300px;
+    
+}
+
+#contened aside #controles{
+    
+    width: 100%;
+    height: 50px;
+    display: flex;  
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+   
+   
+}
+
+button{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(139, 170, 158);
+}
+
+#msjProduc{
+    width: 200px;
+    height: 250px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+   
+
+ 
+}
+

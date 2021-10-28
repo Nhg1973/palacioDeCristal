@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Palacio de Cristal</title>
+  </head>
+  <body>
+      <!-- ENCABEZADO-->
+      <header class="container-fluid bg-success d-flex justify-content-center">
+          <p class="text-ligth mb-0 p-2 fs-6 fw-bold">Contactanos tel: 0054-15-5-6700-2525</p>
+      </header>
+
+      <!--Menu-->
+      <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <span class="text-success fs-5 fw-bold ">Palacio de Cristal</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nuestrasProducciones.html">Donde Estamos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Conoce nuestros productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Estoy atrazado</a></li>
+                  <li><a class="dropdown-item" href="#">No me queda tiempo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Con mas tiempo lo termino</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-contacto">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Unete ingresa tu correo" aria-label="Email">
+              <a href="ejercicio.html"> <button class="btn btn-outline-success" type="button">Ingresar</button></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CARRUSEL-->
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img src="./imagenes/vegetalesVerdes.jpg" class="d-block w-100" alt="verdfres1">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/vegetalesConFondo Blanco.jpg" class="d-block w-100" alt="verdfres2">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/tomatesYBrocoli.jpg" class="d-block w-100" alt="verdfres3">
+          </div>
+        </div>
+      </div>
+
+      <!--Introduccion-->
+      <section class="w-50 mx-auto text-center pt-5" id="intro">
+        <h1 class="p-3 fs-2 border-top borden-3">Una nueva manera de alimentarnos
+          <span class="text-succes">Palacio de Cristal</span>
+        </h1>
+          <p class="p-3 fs-4"><span>Palacio de Cristal</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus atque amet blanditiis, ullam in assumenda totam neque ipsa maiores quae eaque modi commodi quia aliquid inventore doloremque eos nam aperiam?</p>
+      </section>
+
+      <!--Servicios-->
+
+      <section class="row">
+        <div class="container-fluid">
+          <div id="Bueno" class="col-3">
+            <div class="card-" v-for="equipo in equipos" style="width: 18rem;">
+              <img :src='equipo.imagen' class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{equipo.nombre}}</h5>
+                <p class="card-text">{{equipo.descripcion}}</p>
+                <a href="#" class="btn btn-primary">A una hoja que no existe</a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+        <!-- hacer de nosotros-->
+      <section>
+           <div class="w-75 m-auto text-center" id="equipo">
+             <h1 class="mb-5 fs-2">Equipo Codo a Codo <span class="fw-bold fs-2 text-primary">Nahuel Leandro GUERCI</span></h1>
+            <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia quo eaque quis saepe quae quasi autem ratione. Delectus numquam magnam quam iste ratione quaerat odit illo doloremque nulla? Pariatur.</p>
+
+           </div>
+           <div class="mb-5 text-center bg-success" id="verde"> 
+             <img class="img-fluid jus" src="./imagenes/Fondo.jpg" alt="">
+           </div>
+           <div id="local" class="border-top border-2" >
+            <div id="map" class="mapa"></div>
+            <p id="distancia"></p>
+            <div class="wrapper">
+              <h2>Almagro CABA</h2>
+              <h2 class="text-primary mb-4" id="typewriter"></h2>
+              <p class="fs-5  text-body">Lorem ipsum . Eveniet dolore repudiandae tenetur reiciendis ad hic itaque molestias qui! Dicta ullam perspiciatis id esse minus rem recusandae numquam quasi voluptatibus eos!</p>
+              <section class="d-flex" id="numeros local">
+                <div>
+                  <p class="text-primary fs-5">248</p>
+                  <p>Dias de sol</p>
+                </div>
+                <div>
+                  <p class="text-primary fs-5">100%</p>
+                  <p>Aprobado</p>
+                </div>
+                <div>
+                  <p class="text-primary fs-5">24° C</p>
+                  <p>Temperatura</p><br><br><br><br>
+                </div>
+              </section>
+            </div>
+   
+          </div>
+          
+   
+       </section>
+
+       <!--FORMULARIO-->
+       <section id="section-contacto" class="border-bottom border-warning border-2">
+         <div id="bg-contacto">
+          <img src="./imagenes/wave.svg" alt="">
+         </div>
+         <div class="container" id="contenedor-formulario">
+          <div id="titulo-formulario" class="text-center mb-4">
+            <div><img  src="./imagenes/contacto.png" alt="contacto" class="img-fluid w-50"></div>
+            <h2>Contactos</h2>
+           <p class="fs-3">Estamos aqui para hacerte realizadad tus ideas</p>
+          </div>
+          <form action="">
+            <div class="mb-2">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-2">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-2">
+              <button type="button" class="btn btn-success w-100 fs-5">Enviar</button>
+
+            </div>
+          </form>
+ 
+        </div>
+       </section>
+
+       <!--FOOTER-->
+       <footer >
+       
+           <div class="icosns bg-success bg-opacity-50 justify-content-center border border-3" >
+           <a href="#"><i class="bi bi-facebook text-dark fs-3"></i></a>
+           <a href="#"><i class="bi bi-twitter text-dark fs-3"></i></a>
+           <a href="#"><i class="bi bi-youtube text-dark fs-3"></i></a>
+           <a href="#"><i class="bi bi-instagram text-dark fs-3"></i></a>
+          </div>
+      
+
+       </footer>
+
+       
+
+      
+    
+
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+     <!--Vue.JS-->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+     <script src="01.js"></script>
+
+    
+   
+  </body>
+</html>
